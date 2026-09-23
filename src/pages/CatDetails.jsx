@@ -257,7 +257,7 @@ function CatDetails() {
            
             <div>
               <Users size={21} />
-              <span>Adults</span>
+              <span>Adult</span>
             </div>
 
             <div>
