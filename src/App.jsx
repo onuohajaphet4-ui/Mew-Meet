@@ -1,11 +1,11 @@
 import {  Routes, Route } from "react-router-dom";
-import MainLayout from "./layouts/MainLayout";
+import MainLayout from "./layouts/MainLayout.jsx";
 import './App.css'
 import Home from "./pages/Home";
 import Explore from "./pages/Explore";
 import Saved from "./pages/Saved";
-import Profile from "./pages/Profile";
-import CatDetails from "./pages/CatDetails";
+import Profile from "./pages/Profile.jsx";
+import CatDetails from "./pages/CatDetails.jsx";
 
 function App() {
   return (

@@ -238,7 +238,7 @@ function CatDetails() {
            {cat.name} is a sweet and curious little explorer who loves
             gentle attention, sunny windows, and chasing anything
             that moves. She is friendly once she gets comfortable
-            and would make a lovely companion.
+            and would make a lovey companion.
           
           </p>
 
