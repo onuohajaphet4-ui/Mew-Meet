@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./CatDetails.css";
-import { isCatSaved, toggleSavedCat } from "../savedCats";
+import { isCatSaved, toggleSavedCat } from "../SavedCats";
 
 import {
   ArrowLeft,

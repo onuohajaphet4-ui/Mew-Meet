@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Heart, MapPin, ArrowRight } from "lucide-react";
-import { getSavedCats, toggleSavedCat } from "../savedCats";
+import { getSavedCats, toggleSavedCat } from "../SavedCats";
 import "./Saved.css";
 // import { FaWhatsapp} from "react-icons/fa";
 
