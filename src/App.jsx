@@ -6,7 +6,8 @@ import Explore from "./pages/Explore";
 import Saved from "./pages/Saved";
 import Profile from "./pages/Profile.jsx";
 import CatDetails from "./pages/CatDetails.jsx";
-
+import Setting from "./pages/Settings.jsx";
+import Fact from './components/Fact.jsx'
 function App() {
   return (
    
@@ -16,6 +17,8 @@ function App() {
           <Route path="/explore" element={<Explore />} />
           <Route path="/saved" element={<Saved />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/facts" element={<Fact />} />
+          <Route path="/settings" element={<Setting/>} />
           <Route path="/cats/:id" element={<CatDetails />} />
         </Route>
       </Routes>

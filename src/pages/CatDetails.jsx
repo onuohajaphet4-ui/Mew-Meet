@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./CatDetails.css";
 import { isCatSaved, toggleSavedCat } from "../SavedCats";
@@ -20,14 +20,31 @@ import {
 import { cats } from "./Explore";
 
 function CatDetails() {
-  const { id } = useParams();
-  const navigate = useNavigate();
+ const { id } = useParams();
+const navigate = useNavigate();
 
-  const [saved, setSaved] = useState(() => isCatSaved(cats.id));
-  const [activeImage, setActiveImage] = useState(0);
+// Find the cat that matches the ID in the URL
+const cat = cats.find((cat) => cat.id === Number(id));
 
-  // Find the cat that matches the ID in the URL
-  const cat = cats.find((cat) => cat.id === Number(id));
+const [saved, setSaved] = useState(() => isCatSaved(cat.id));
+const [activeImage, setActiveImage] = useState(0);
+
+useEffect(() => {
+  if (!cat) return;
+
+  const visitedCats = JSON.parse(
+    localStorage.getItem("visitedCats") || "[]"
+  );
+
+  if (!visitedCats.includes(cat.id)) {
+    visitedCats.push(cat.id);
+
+    localStorage.setItem(
+      "visitedCats",
+      JSON.stringify(visitedCats)
+    );
+  }
+}, [cat]);
 
   // If no cat exists with that ID
   if (!cat) {

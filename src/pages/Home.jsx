@@ -1,6 +1,7 @@
 import { FiArrowRight, FiHeart, FiMapPin } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import './Home.css'
+import Fact from "../components/Fact";
 
 const cats = [
   {
@@ -137,6 +138,9 @@ function Home() {
           </p>
         </div>
       </section>
+
+
+      <Fact/>
     </div>
   );
 }

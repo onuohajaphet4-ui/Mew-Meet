@@ -74,3 +74,51 @@ a {
   color: var(--primary-dark);
   background: #f8e9ee;
 }
+
+/* GLOBAL DARK MODE */
+
+body.dark-mode {
+  background: #181418;
+  color: #f5edf1;
+}
+
+body.dark-mode .app,
+body.dark-mode main {
+  background: #181418;
+  color: #f5edf1;
+}
+
+body.dark-mode header,
+body.dark-mode nav,
+body.dark-mode section,
+body.dark-mode .card {
+  background-color: #241f23;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+  color: #f5edf1;
+}
+
+body.dark-mode p,
+body.dark-mode span {
+  color: #b9aab1;
+}
+
+body.dark-mode button {
+  color: #f5edf1;
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background: #30282d;
+  color: #f5edf1;
+  border-color: #463b41;
+}
+
+body.dark-mode a {
+  color: #d996b1;
+}
