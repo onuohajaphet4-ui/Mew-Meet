@@ -2,24 +2,33 @@ import { FiArrowRight, FiHeart, FiMapPin } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import './Home.css'
 import Fact from "../components/Fact";
+import bella from '../assets/bella.jpg'
+import noir from '../assets/noir.jpg'
 
 const cats = [
   {
-    id: 1,
-    name: "Luna",
-    age: "2 years",
-    location: "Lagos",
-    image:
-      "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=700&q=80",
-  },
-  {
-    id: 2,
-    name: "Mochi",
-    age: "1 year",
-    location: "Abuja",
-    image:
-      "https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=700&q=80",
-  },
+   id: 1,
+      name: "Bella",
+      age:1,
+      ageLabel: "20/07/2025",
+      type: "Young",
+      location: "owerri",
+      image:
+          bella,
+        
+       
+    },
+    {
+      id: 2,
+      name: "Nior",
+      age:0,
+      ageLabel: "18/09/2026",
+      type: "Kitten",
+      location: "owerri",
+      image:
+       noir,
+        
+    },
   {
     id: 3,
     name: "Milo",

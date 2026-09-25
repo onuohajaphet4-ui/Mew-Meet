@@ -2,78 +2,82 @@ import { useMemo, useState } from "react";
 import { FiHeart, FiMapPin, FiSearch, FiSliders } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import './Explore.css'
+import bella from '../assets/bella.jpg'
+import noir from '../assets/noir.jpg'
+import sky from '../assets/sky.jpg'
+import alvin from '../assets/alvin.jpg'
 
  export const cats = [
   {
     id: 1,
-    name: "Luna",
-    age: 2,
-    ageLabel: "2 years",
+    name: "Bella",
+    age:1,
+    ageLabel: "20/07/2025",
     type: "Young",
-    location: "Lagos",
+    location: "owerri",
     images:[
-       "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=700&q=80",
-        "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=700&q=80",
-         "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=700&q=80"
+        bella,
+        bella,
+        bella,
     ]
      
   },
   {
     id: 2,
-    name: "Mochi",
-    age: 1,
-    ageLabel: "1 year",
-    type: "Young",
-    location: "Abuja",
+    name: "Nior",
+    age: 0,
+    ageLabel: "18/09/2026",
+    type: "Kitten",
+    location: "owerri",
     images:[
-      "https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=700&q=80",
-      "https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=700&q=80",
-      "https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=700&q=80",
+     noir,
+     noir,
+     noir,
     ]
       
   },
   {
     id: 3,
-    name: "Milo",
-    age: 3,
-    ageLabel: "3 years",
-    type: "Adult",
-    location: "Port Harcourt",
+    name: "Alvin",
+    age: 0,
+    ageLabel: "18/09/2026",
+    type: "Kitten",
+    location: "owerri",
     images:
      [
-       "https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=700&q=80",
-        "https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=700&q=80",
-         "https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=700&q=80",
+       sky,
+       sky,
+       sky,
      ]
   },
   {
     id: 4,
-    name: "Nala",
-    age: 8,
-    ageLabel: "8 months",
+    name: "Sky",
+    age: 0,
+    ageLabel: "18/09/2026",
     type: "Kitten",
     location: "Lagos",
     images:
       [
-        "https://images.unsplash.com/photo-1513245543132-31f507417b26?auto=format&fit=crop&w=700&q=80",
-        "https://images.unsplash.com/photo-1513245543132-31f507417b26?auto=format&fit=crop&w=700&q=80",
-        "https://images.unsplash.com/photo-1513245543132-31f507417b26?auto=format&fit=crop&w=700&q=80",
+        alvin,
+        alvin,
+        alvin
       ]
   },
-  {
+ {
     id: 5,
-    name: "Coco",
-    age: 4,
-    ageLabel: "4 years",
-    type: "Adult",
-    location: "Ibadan",
-    images:
-      [
-        "https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=700&q=80",
-        "https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=700&q=80",
-        "https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=700&q=80",
-      ]
-  },
+    name: "Milo",
+    age: "3",
+     ageLabel: "3 years",
+     type: "Adult",
+    location: "Port Harcourt",
+    images:[
+      "https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=700&q=80",
+  "https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=700&q=80",
+  "https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=700&q=80",
+  
+    ]
+  }, 
   {
     id: 6,
     name: "Bean",
@@ -161,7 +165,7 @@ function Explore() {
               key={cat.id}
             >
               <div className="explore-image">
-                <img src={cat.images} alt={cat.name} />
+                <img src={cat.images [0]} alt={cat.name} />
 
                 <button
                   className="explore-heart"
