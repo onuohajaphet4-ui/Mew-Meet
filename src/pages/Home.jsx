@@ -9,9 +9,7 @@ const cats = [
   {
    id: 1,
       name: "Bella",
-      age:1,
-      ageLabel: "20/07/2025",
-      type: "Young",
+      age:"1 years",
       location: "owerri",
       image:
           bella,
@@ -21,9 +19,7 @@ const cats = [
     {
       id: 2,
       name: "Nior",
-      age:0,
-      ageLabel: "18/09/2026",
-      type: "Kitten",
+      age:"0 years",
       location: "owerri",
       image:
        noir,
