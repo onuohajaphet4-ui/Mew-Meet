@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams , Link} from "react-router-dom";
 import "./CatDetails.css";
 import { isCatSaved, toggleSavedCat } from "../SavedCats";
 
@@ -100,9 +100,12 @@ useEffect(() => {
             />
           </button>
 
-          <button className="icon-btn">
-            <MoreHorizontal size={22} />
-          </button>
+            <Link to="/profile" className="icon-btn" >
+                      {/* Explore cats */}
+                    <MoreHorizontal size={22} />
+                    </Link>
+            
+          
 
         </div>
       </header>
@@ -254,7 +257,7 @@ useEffect(() => {
              
            {cat.name} is a sweet and curious little explorer who loves
             gentle attention, sunny windows, and chasing anything
-            that moves. She is friendly once she gets comfortable
+            that moves. {cat.pronoun} is friendly once she gets comfortable
             and would make a lovey companion.
           
           </p>

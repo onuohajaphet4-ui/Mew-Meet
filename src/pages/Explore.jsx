@@ -6,6 +6,10 @@ import bella from '../assets/bella.jpg'
 import noir from '../assets/noir.jpg'
 import sky from '../assets/sky.jpg'
 import alvin from '../assets/alvin.jpg'
+import {
+  MoreHorizontal,
+} from "lucide-react";
+
 
  export const cats = [
   {
@@ -15,6 +19,8 @@ import alvin from '../assets/alvin.jpg'
     ageLabel: "20/07/2025",
     type: "Young",
     location: "owerri",
+    gender:"Female",
+    pronoun:"She",
     images:[
         bella,
         bella,
@@ -29,6 +35,8 @@ import alvin from '../assets/alvin.jpg'
     ageLabel: "18/09/2026",
     type: "Kitten",
     location: "owerri",
+    gender:"Male",
+    pronoun:"He",
     images:[
      noir,
      noir,
@@ -43,6 +51,8 @@ import alvin from '../assets/alvin.jpg'
     ageLabel: "18/09/2026",
     type: "Kitten",
     location: "owerri",
+    gender:"Male",
+    pronoun:"He",
     images:
      [
        sky,
@@ -57,6 +67,8 @@ import alvin from '../assets/alvin.jpg'
     ageLabel: "18/09/2026",
     type: "Kitten",
     location: "Lagos",
+    gender:"Female",
+    pronoun:"She",
     images:
       [
         alvin,
@@ -68,9 +80,11 @@ import alvin from '../assets/alvin.jpg'
     id: 5,
     name: "Milo",
     age: "3",
-     ageLabel: "3 years",
+     ageLabel: "12/7/2023",
      type: "Adult",
     location: "Port Harcourt",
+    gender:"Male",
+    pronoun:"He",
     images:[
       "https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=700&q=80",
   "https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=700&q=80",
@@ -82,9 +96,11 @@ import alvin from '../assets/alvin.jpg'
     id: 6,
     name: "Bean",
     age: 6,
-    ageLabel: "6 months",
+    ageLabel: "11/4/2026",
     type: "Kitten",
     location: "Enugu",
+    gender:"Female",
+    pronoun:"SHe",
     images:
       [
         "https://images.unsplash.com/photo-1561948955-570b270e7c36?auto=format&fit=crop&w=700&q=80",
@@ -124,9 +140,10 @@ function Explore() {
           </p>
         </div>
 
-        <button className="filter-button">
-          <FiSliders />
-        </button>
+      <Link to="/profile" className="icon-btn" >
+                      {/* Explore cats */}
+                    <MoreHorizontal size={22} />
+                    </Link>
       </header>
 
       <div className="search-box">
@@ -179,7 +196,7 @@ function Explore() {
               <div className="explore-card-info">
                 <div>
                   <h2>{cat.name}</h2>
-                  <p>{cat.ageLabel}</p>
+                  <p>{cat.age} years</p>
                 </div>
 
                 <span>
